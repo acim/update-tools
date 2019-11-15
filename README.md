@@ -1,10 +1,10 @@
 # update-tools
 
-Bored by updating kubectx, helm, helmfile, stern, starship and similar utilities?
+Bored by updating kubectx, kubens, helmfile, stern, starship and similar utilities?
 
 This repository contains a set of utilities to update each of the mentioned binaries.
 
-At the moment, there is just a script to update helmfile, but more scripts will be added as soon as there are new releases.
+More update tools are coming.
 
 ## How to use
 

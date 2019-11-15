@@ -1,6 +1,7 @@
 {
     "cSpell.words": [
         "helmfile",
-        "kubectx"
+        "kubectx",
+        "kubens"
     ]
 }
