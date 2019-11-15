@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+[ "$UID" -eq 0 ] || exec sudo bash "$0" "$@"
+
+curl -L -o /usr/local/bin/helmfile https://github.com/roboll/helmfile/releases/latest/download/helmfile_linux_amd64
+chmod 755 /usr/local/bin/helmfile
