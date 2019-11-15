@@ -15,4 +15,12 @@ All binaries will be downloaded to /usr/local/bin.
 ## Coming soon
 
 * helm updater
-* helm3 update
+* helm3 updater
+
+## Links
+
+* [helm](https://github.com/helm/helm)
+* [helmfile](https://github.com/roboll/helmfile)
+* [kubectx + kubens](https://github.com/ahmetb/kubectx)
+* [starship](https://github.com/starship/starship)
+* [stern](https://github.com/wercker/stern)
