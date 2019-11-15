@@ -2,6 +2,6 @@
 
 [ "$UID" -eq 0 ] || exec sudo bash "$0" "$@"
 
-curl -L https://github.com/starship/starship/releases/download/v0.26.4/starship-x86_64-unknown-linux-gnu.tar.gz | tar zx -C /tmp
+curl -L https://github.com/starship/starship/releases/latest/download/starship-x86_64-unknown-linux-gnu.tar.gz | tar zx -C /tmp
 mv /tmp/starship /usr/local/bin/starship
 chown root:root /usr/local/bin/starship
