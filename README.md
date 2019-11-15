@@ -11,3 +11,8 @@ More update tools are coming.
 Just copy wished utility to some of the directories in your $PATH (i.e. /usr/local/bin) and run it.
 
 All binaries will be downloaded to /usr/local/bin.
+
+## Coming soon
+
+* helm updater
+* helm3 update
