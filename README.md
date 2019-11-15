@@ -1,5 +1,7 @@
 # update-tools
 
+[![GitHub](https://img.shields.io/github/license/acim/update-tools)](LICENSE)
+
 Bored by updating helm, kubectx, starship and similar utilities? You are at the right place 😊.
 
 This repository contains a set of utilities to update the following binaries:
