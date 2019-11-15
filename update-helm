@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+[ "$UID" -eq 0 ] || exec sudo bash "$0" "$@"
+
+VERSION=$(github-latest helm/helm 2)
+curl -L https://get.helm.sh/helm-v2.16.0-linux-amd64.tar.gz | tar zx -C /tmp
+mv /tmp/linux-amd64/helm /usr/local/bin
+rm -f /tmp/linux-amd64/*
+rmdir /tmp/linux-amd64
