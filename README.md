@@ -1,4 +1,4 @@
-# upgrade-tools
+# update-tools
 
 Bored by updating kubectx, helm, helmfile, stern, starship and similar utilities?
 
