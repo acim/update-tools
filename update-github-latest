@@ -3,4 +3,4 @@
 [ "$UID" -eq 0 ] || exec sudo bash "$0" "$@"
 
 curl -L -o /usr/local/bin/github-latest https://github.com/acim/github-latest/releases/latest/download/github-latest_linux_amd64
-chmod 775 /usr/local/bin/github-latest
+chmod 755 /usr/local/bin/github-latest

@@ -5,4 +5,6 @@
 VERSION=$(github-latest helm/helm 3)
 curl -L https://get.helm.sh/helm-v${VERSION}-linux-amd64.tar.gz | tar zx -C /tmp
 mv /tmp/linux-amd64/helm /usr/local/bin/helm3
+chown root:root /usr/local/bin/helm3
+rm -f /tmp/linux-amd64/*
 rmdir /tmp/linux-amd64
