@@ -2,8 +2,9 @@
 
 [ "$UID" -eq 0 ] || exec sudo bash "$0" "$@"
 
-VERSION=$(github-latest helm/helm 2)
+VERSION=$(github-latest helm/helm 3)
 curl -L https://get.helm.sh/helm-v${VERSION}-linux-amd64.tar.gz | tar zx -C /tmp
-mv /tmp/linux-amd64/helm /usr/local/bin
+mv /tmp/linux-amd64/helm /usr/local/bin/helm
+chown root:root /usr/local/bin/helm
 rm -f /tmp/linux-amd64/*
 rmdir /tmp/linux-amd64

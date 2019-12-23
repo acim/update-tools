@@ -7,13 +7,13 @@ Bored by updating helm, kubectx, starship and similar utilities? You are at the 
 This repository contains a set of utilities to update the following binaries:
 
 * helm
-* helm3 (helm 3.0 is named helm3 to be able to coexist with the old version)
+* helm3 (helm 2 is named helm2 to be able to coexist with the new version 3)
 * helmfile
 * kubectx
 * kubens
 * starship
 * stern
-* update-github-latest (required to update helm and helm3)
+* update-github-latest (required to update helm2 and helm)
 
 More update tools are coming.
 
@@ -29,7 +29,7 @@ All binaries will be downloaded to /usr/local/bin.
 
 ## Links
 
-* [helm + helm3](https://github.com/helm/helm)
+* [helm2 + helm](https://github.com/helm/helm)
 * [helmfile](https://github.com/roboll/helmfile)
 * [kubectx + kubens](https://github.com/ahmetb/kubectx)
 * [starship](https://github.com/starship/starship)
