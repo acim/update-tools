@@ -13,7 +13,8 @@ This repository contains a set of utilities to update the following binaries:
 * kubens
 * starship
 * stern
-* update-github-latest (required to update helm2 and helm)
+* terraform
+* update-github-latest
 
 More update tools are coming.
 
@@ -26,6 +27,7 @@ All binaries will be downloaded to /usr/local/bin.
 ## Requirements
 
 * update-helm and update-helm3 require github-latest which you can download by update-github-latest.
+* terraform requires jq.
 
 ## Links
 
@@ -34,4 +36,5 @@ All binaries will be downloaded to /usr/local/bin.
 * [kubectx + kubens](https://github.com/ahmetb/kubectx)
 * [starship](https://github.com/starship/starship)
 * [stern](https://github.com/wercker/stern)
+* [terraform](https://github.com/hashicorp/terraform)
 * [update-github-latest](https://github.com/acim/github-latest)
