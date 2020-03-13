@@ -6,10 +6,8 @@ VERSION=$(curl -s https://checkpoint-api.hashicorp.com/v1/check/terraform | jq -
 URL=https://releases.hashicorp.com/terraform/${VERSION}/terraform_${VERSION}_linux_amd64.zip
 FILENAME=terraform_${VERSION}_linux_amd64.zip
 
-curl -L -o /tmp/${FILENAME} $URL
 cd /tmp
-unzip ${FILENAME}
+curl -L -o ${FILENAME} $URL
+unzip -d /usr/local/bin -o ${FILENAME}
 rm ${FILENAME}
-
-mv -f /tmp/terraform /usr/local/bin/.
 chown root:root /usr/local/bin/terraform
