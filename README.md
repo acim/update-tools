@@ -1,6 +1,7 @@
 # update-tools
 
 [![GitHub](https://img.shields.io/github/license/acim/update-tools)](LICENSE)
+[![HitCount](http://hits.dwyl.com/acim/update-tools.svg)](http://hits.dwyl.com/acim/update-tools)
 
 Bored by updating helm, kubectx, starship and similar utilities? You are at the right place 😊.
 
