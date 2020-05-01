@@ -7,8 +7,10 @@ Bored by updating helm, kubectx, starship and similar utilities? You are at the 
 
 This repository contains a set of utilities to update the following binaries:
 
-* helm
-* helm3 (helm 2 is named helm2 to be able to coexist with the new version 3)
+* drone (command Line Tools for Drone CI)
+* hcloud (command-line interface for Hetzner Cloud, requires Go to be installed)
+* helm (Helm 3)
+* helm2
 * helmfile
 * kubectx
 * kubens
@@ -32,6 +34,8 @@ All binaries will be downloaded to /usr/local/bin.
 
 ## Links
 
+* [drone](https://github.com/drone/drone-cli)
+* [hcloud](https://github.com/hetznercloud/cli)
 * [helm2 + helm](https://github.com/helm/helm)
 * [helmfile](https://github.com/roboll/helmfile)
 * [kubectx + kubens](https://github.com/ahmetb/kubectx)
