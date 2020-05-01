@@ -1,6 +1,8 @@
 {
     "cSpell.words": [
+        "hcloud",
         "helmfile",
+        "hetzner",
         "kubectx",
         "kubens"
     ]

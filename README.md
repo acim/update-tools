@@ -8,16 +8,16 @@ Bored by updating helm, kubectx, starship and similar utilities? You are at the 
 This repository contains a set of utilities to update the following binaries:
 
 * drone (command Line Tools for Drone CI)
-* hcloud (command-line interface for Hetzner Cloud, requires Go to be installed)
+* github-latest (utility to find out the latest release of some project at GitHub)
+* hcloud (command-line interface for Hetzner Cloud)
 * helm (Helm 3)
 * helm2
 * helmfile
 * kubectx
 * kubens
 * starship
-* stern
+* stern (multi pod and container log tailing for Kubernetes)
 * terraform
-* update-github-latest
 
 More update tools are coming.
 
@@ -25,16 +25,18 @@ More update tools are coming.
 
 Just copy wished utility to some of the directories in your $PATH (i.e. /usr/local/bin) and run it.
 
-All binaries will be downloaded to /usr/local/bin.
+All binaries will be downloaded to /usr/local/bin. Binaries compiled by Go, i.e. hcloud, will be placed in $GOPATH/bin.
 
 ## Requirements
 
-* update-helm and update-helm3 require github-latest which you can download by update-github-latest.
+* hcloud requires Go compiler.
 * terraform requires jq.
+* update-helm and update-helm3 require github-latest which you can download by update-github-latest.
 
 ## Links
 
 * [drone](https://github.com/drone/drone-cli)
+* [github-latest](https://github.com/acim/github-latest)
 * [hcloud](https://github.com/hetznercloud/cli)
 * [helm2 + helm](https://github.com/helm/helm)
 * [helmfile](https://github.com/roboll/helmfile)
@@ -42,4 +44,3 @@ All binaries will be downloaded to /usr/local/bin.
 * [starship](https://github.com/starship/starship)
 * [stern](https://github.com/wercker/stern)
 * [terraform](https://github.com/hashicorp/terraform)
-* [update-github-latest](https://github.com/acim/github-latest)
