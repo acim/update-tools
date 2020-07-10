@@ -13,6 +13,7 @@ This repository contains a set of utilities to update the following binaries:
 * helm (Helm 3)
 * helm2
 * helmfile
+* kind
 * kubectx
 * kubens
 * starship
@@ -25,7 +26,7 @@ More update tools are coming.
 
 Just copy wished utility to some of the directories in your $PATH (i.e. /usr/local/bin) and run it.
 
-All binaries will be downloaded to /usr/local/bin. Binaries compiled by Go, i.e. hcloud, will be placed in $GOPATH/bin.
+All binaries will be downloaded to /usr/local/bin. Binaries compiled by Go, i.e. hcloud and kind, will be placed in $GOPATH/bin.
 
 ## Requirements
 
@@ -40,6 +41,7 @@ All binaries will be downloaded to /usr/local/bin. Binaries compiled by Go, i.e.
 * [hcloud](https://github.com/hetznercloud/cli)
 * [helm2 + helm](https://github.com/helm/helm)
 * [helmfile](https://github.com/roboll/helmfile)
+* [kind](https://github.com/kubernetes-sigs/kind)
 * [kubectx + kubens](https://github.com/ahmetb/kubectx)
 * [starship](https://github.com/starship/starship)
 * [stern](https://github.com/wercker/stern)
