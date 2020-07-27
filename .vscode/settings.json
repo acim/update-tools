@@ -4,6 +4,7 @@
         "helmfile",
         "hetzner",
         "kubectx",
-        "kubens"
+        "kubens",
+        "kustomize"
     ]
 }
