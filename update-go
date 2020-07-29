@@ -8,5 +8,4 @@ latest="$(echo $url | grep -oP 'go[0-9\.]+' | grep -oP '[0-9\.]+' | head -c -2 )
 
 rm -rf /usr/local/go
 curl -L "https://golang.org/dl/go${latest}.linux-amd64.tar.gz" | tar -zxC /usr/local
-rm "go${latest}.linux-amd64.tar.gz"
 cd -
