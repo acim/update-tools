@@ -2,10 +2,8 @@
 
 [ "$UID" -eq 0 ] || exec sudo bash "$0" "$@"
 
-cd /tmp
 url="$(curl -sS https://golang.org/dl/ | grep -oP '\/dl\/go([0-9\.]+)\.linux-amd64\.tar\.gz' | head -n 1 )"
 latest="$(echo $url | grep -oP 'go[0-9\.]+' | grep -oP '[0-9\.]+' | head -c -2 )"
 
 rm -rf /usr/local/go
 curl -L "https://golang.org/dl/go${latest}.linux-amd64.tar.gz" | tar -zxC /usr/local
-cd -
