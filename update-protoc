@@ -10,6 +10,7 @@ cd /tmp
 curl -L -o ${FILENAME} ${URL}
 unzip -q ${FILENAME} -d protoc3
 chown root:root protoc3/bin/*
+chmod 755 protoc3/bin/*
 mv protoc3/bin/* /usr/local/bin/
 find protoc3/include -type d -exec chmod 755 {} \;
 find protoc3/include -type f -exec chmod 644 {} \;
