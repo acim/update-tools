@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+GO111MODULE=on go get mvdan.cc/gofumpt
+GO111MODULE=on go get mvdan.cc/gofumpt/gofumports
+
+VERSION=$(github-latest golangci/golangci-lint)
+GO111MODULE=on go get github.com/golangci/golangci-lint/cmd/golangci-lint@v${VERSION}

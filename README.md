@@ -10,6 +10,7 @@ This repository contains a set of utilities to update the following binaries:
 * drone (command Line Tools for Drone CI)
 * github-latest (utility to find out the latest release of some project at GitHub)
 * go
+* go tools (gofumpt, gofumports and golangci-lint)
 * hcloud (command-line interface for Hetzner Cloud)
 * helm (Helm 3)
 * helm2
@@ -34,13 +35,15 @@ All binaries will be downloaded to /usr/local/bin. Binaries compiled by Go will 
 
 * hcloud, kind and kustomize require Go compiler.
 * terraform requires jq.
-* update-helm and update-helm2 require github-latest which you can download by update-github-latest.
+* gotools, kind, update-helm and update-helm2 require github-latest which you can download with update-github-latest.
 
 ## Links
 
 * [drone](https://github.com/drone/drone-cli)
 * [github-latest](https://github.com/acim/github-latest)
 * [go](https://golang.org/)
+* [gofumpt + gofumports](https://github.com/mvdan/gofumpt)
+* [golangci-lint](https://github.com/golangci/golangci-lint)
 * [hcloud](https://github.com/hetznercloud/cli)
 * [helm2 + helm](https://github.com/helm/helm)
 * [helmfile](https://github.com/roboll/helmfile)
