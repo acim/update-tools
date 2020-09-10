@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+[ "$UID" -eq 0 ] || exec sudo bash "$0" "$@"
+
+VERSION=$(github-latest protocolbuffers/protobuf 3)
+FILENAME=protoc-${VERSION}-linux-x86_64.zip
+URL=https://github.com/protocolbuffers/protobuf/releases/download/v${VERSION}/${FILENAME}
+
+cd /tmp
+curl -L -o ${FILENAME} ${URL}
+unzip -q ${FILENAME} -d protoc3
+chown root:root protoc3/bin/*
+mv protoc3/bin/* /usr/local/bin/
+find protoc3/include -type d -exec chmod 755 {} \;
+find protoc3/include -type f -exec chmod 644 {} \;
+mkdir -p /usr/local/include/google
+cp -pR protoc3/include/google/* /usr/local/include/google/.
+rm -fr protoc3

@@ -19,6 +19,7 @@ This repository contains a set of utilities to update the following binaries:
 - kubectx
 - kubens
 - kustomize
+- protoc
 - starship
 - stern (multi pod and container log tailing for Kubernetes)
 - terraform
@@ -50,6 +51,7 @@ All binaries will be downloaded to /usr/local/bin. Binaries compiled by Go will 
 - [kind](https://github.com/kubernetes-sigs/kind)
 - [kubectx + kubens](https://github.com/ahmetb/kubectx)
 - [kustomize](https://github.com/kubernetes-sigs/kustomize)
+- [protoc + protoc-gen-go](https://github.com/protocolbuffers/protobuf)
 - [starship](https://github.com/starship/starship)
 - [stern](https://github.com/wercker/stern)
 - [terraform](https://github.com/hashicorp/terraform)

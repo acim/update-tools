@@ -1,7 +1,12 @@
 #!/usr/bin/env bash
 
-GO111MODULE=on go get mvdan.cc/gofumpt
-GO111MODULE=on go get mvdan.cc/gofumpt/gofumports
+GO111MODULE=on go get -u mvdan.cc/gofumpt
+GO111MODULE=on go get -u mvdan.cc/gofumpt/gofumports
 
 VERSION=$(github-latest golangci/golangci-lint)
-GO111MODULE=on go get github.com/golangci/golangci-lint/cmd/golangci-lint@v${VERSION}
+GO111MODULE=on go get -u github.com/golangci/golangci-lint/cmd/golangci-lint@v${VERSION}
+
+if protoc --version &> /dev/null
+then
+    go get -u github.com/golang/protobuf/protoc-gen-go
+fi
