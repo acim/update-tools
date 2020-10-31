@@ -4,7 +4,7 @@ GO111MODULE=on go get -u mvdan.cc/gofumpt
 GO111MODULE=on go get -u mvdan.cc/gofumpt/gofumports
 
 VERSION=$(github-latest golangci/golangci-lint)
-GO111MODULE=on go get -u github.com/golangci/golangci-lint/cmd/golangci-lint@v${VERSION}
+GO111MODULE=on go get github.com/golangci/golangci-lint/cmd/golangci-lint@v${VERSION}
 
 if protoc --version &> /dev/null
 then
