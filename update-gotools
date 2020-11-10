@@ -2,6 +2,7 @@
 
 GO111MODULE=on go get -u mvdan.cc/gofumpt
 GO111MODULE=on go get -u mvdan.cc/gofumpt/gofumports
+go get -u golang.org/x/lint/golint
 
 VERSION=$(github-latest golangci/golangci-lint)
 GO111MODULE=on go get github.com/golangci/golangci-lint/cmd/golangci-lint@v${VERSION}
