@@ -16,9 +16,6 @@ go get -u github.com/kubernetes/code-generator/cmd/lister-gen
 go get -u github.com/kubernetes/code-generator/cmd/informer-gen
 go get -u github.com/kubernetes/code-generator/cmd/deepcopy-gen
 
-# Install helm-docs
-GO111MODULE=on go get -u github.com/norwoodj/helm-docs/cmd/helm-docs
-
 # Install protoc-gen-to if protoc command is present
 if protoc --version &> /dev/null
 then
