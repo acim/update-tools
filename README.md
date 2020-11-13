@@ -10,17 +10,17 @@ This repository contains a set of utilities to update the following binaries:
 - drone (command Line Tools for Drone CI)
 - github-latest (utility to find out the latest release of some project at GitHub)
 - go
-- go tools (gofumpt, gofumports and golangci-lint)
+- go tools (gofumpt, gofumports, golangci-lint, golint, Kubernetes code-generator tools, protoc-gen-go, protoc-gen-go-grpc and structslop)
 - hcloud (command-line interface for Hetzner Cloud)
-- helm (Helm 3)
-- helm2
+- helm
+- helm-docs (tool to generate Helm documentation out of values.yaml)
 - helmfile
 - kind
 - kubectx
 - kubens
 - kustomize
-- protoc
-- starship
+- protoc (Google protobuf compiler)
+- starship (fancy CLI prompt)
 - stern (multi pod and container log tailing for Kubernetes)
 - terraform
 
@@ -46,7 +46,8 @@ All binaries will be downloaded to /usr/local/bin. Binaries compiled by Go will 
 - [gofumpt + gofumports](https://github.com/mvdan/gofumpt)
 - [golangci-lint](https://github.com/golangci/golangci-lint)
 - [hcloud](https://github.com/hetznercloud/cli)
-- [helm2 + helm](https://github.com/helm/helm)
+- [helm](https://github.com/helm/helm)
+- [helm-docs](https://github.com/norwoodj/helm-docs)
 - [helmfile](https://github.com/roboll/helmfile)
 - [kind](https://github.com/kubernetes-sigs/kind)
 - [kubectx + kubens](https://github.com/ahmetb/kubectx)
