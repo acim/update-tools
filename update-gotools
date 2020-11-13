@@ -3,11 +3,12 @@
 GO111MODULE=on go get -u mvdan.cc/gofumpt
 GO111MODULE=on go get -u mvdan.cc/gofumpt/gofumports
 go get -u golang.org/x/lint/golint
+go get github.com/orijtech/structslop/cmd/structslop
 
 VERSION=$(github-latest golangci/golangci-lint)
 GO111MODULE=on go get github.com/golangci/golangci-lint/cmd/golangci-lint@v${VERSION}
 
 if protoc --version &> /dev/null
 then
-    go get -u github.com/golang/protobuf/protoc-gen-go
+    go install google.golang.org/protobuf/cmd/protoc-gen-go
 fi
