@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+# Development tools
 GO111MODULE=on go get -u mvdan.cc/gofumpt
 GO111MODULE=on go get -u mvdan.cc/gofumpt/gofumports
 go get -u golang.org/x/lint/golint
@@ -8,6 +9,17 @@ go get github.com/orijtech/structslop/cmd/structslop
 VERSION=$(github-latest golangci/golangci-lint)
 GO111MODULE=on go get github.com/golangci/golangci-lint/cmd/golangci-lint@v${VERSION}
 
+# Kubernetes code-generator
+go get -u github.com/kubernetes/code-generator/cmd/defaulter-gen
+go get -u github.com/kubernetes/code-generator/cmd/client-gen
+go get -u github.com/kubernetes/code-generator/cmd/lister-gen
+go get -u github.com/kubernetes/code-generator/cmd/informer-gen
+go get -u github.com/kubernetes/code-generator/cmd/deepcopy-gen
+
+# Install helm-docs
+GO111MODULE=on go get github.com/norwoodj/helm-docs/cmd/helm-docs
+
+# Install protoc-gen-to if protoc command is present
 if protoc --version &> /dev/null
 then
     go install google.golang.org/protobuf/cmd/protoc-gen-go
