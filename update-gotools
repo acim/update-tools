@@ -2,6 +2,8 @@
 
 # Development tools
 GO111MODULE=on go get -u mvdan.cc/gofumpt
+GO111MODULE=on go get -u mvdan.cc/gofumpt/gofumports
+go get -u golang.org/x/lint/golint
 
 # Kubernetes code-generator
 go get -u github.com/kubernetes/code-generator/cmd/defaulter-gen
