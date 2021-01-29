@@ -10,7 +10,7 @@ This repository contains a set of utilities to update the following binaries:
 - drone (command Line Tools for Drone CI)
 - github-latest (utility to find out the latest release of some project at GitHub)
 - go
-- go tools (gofumpt, gofumports, golangci-lint, golint, Kubernetes code-generator tools, protoc-gen-go, protoc-gen-go-grpc and structslop)
+- go tools (gopherbadger, gofumpt, gofumports, golangci-lint, golint, Kubernetes code-generator tools, protoc-gen-go, protoc-gen-go-grpc and structslop)
 - hcloud (command-line interface for Hetzner Cloud)
 - helm
 - helm-docs (tool to generate Helm documentation out of values.yaml)
