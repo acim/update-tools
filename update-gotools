@@ -4,8 +4,9 @@
 GO111MODULE=on go get -u mvdan.cc/gofumpt
 GO111MODULE=on go get -u mvdan.cc/gofumpt/gofumports
 go get -u golang.org/x/lint/golint
+go get -u github.com/daixiang0/gci
 go get -u golang.org/x/tools/cmd/godoc
-GO111MODULE=on go get github.com/golangci/golangci-lint/cmd/golangci-lint
+GO111MODULE=on go get -u github.com/golangci/golangci-lint/cmd/golangci-lint
 
 # Kubernetes code-generator
 go get -u github.com/kubernetes/code-generator/cmd/defaulter-gen
