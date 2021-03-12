@@ -2,5 +2,9 @@
 
 [ "$UID" -eq 0 ] || exec sudo bash "$0" "$@"
 
-curl -L -o /usr/local/bin/github-latest https://github.com/acim/github-latest/releases/latest/download/github-latest_linux_amd64
-chmod 755 /usr/local/bin/github-latest
+VERSION=$(github-latest acim/github-latest)
+FILENAME=github-latest-v${VERSION}-linux-amd64.tar.gz
+URL=https://github.com/acim/github-latest/releases/download/v${VERSION}/${FILENAME}
+
+curl -L  ${URL} | tar -zxC /usr/local
+chown root:root /usr/local/bin/github-latest
