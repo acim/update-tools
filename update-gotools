@@ -2,4 +2,6 @@
 
 go get -u golang.org/x/lint/golint
 go get -u github.com/daixiang0/gci
-go get -u github.com/golangci/golangci-lint/cmd/golangci-lint
+
+VERSION=$(github-latest golangci/golangci-lint)
+go get github.com/golangci/golangci-lint/cmd/golangci-lint@v$VERSION
