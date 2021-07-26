@@ -1,4 +1,14 @@
 #!/usr/bin/env bash
 
-go get -u github.com/ahmetb/kubectx/cmd/kubectx
-go get -u github.com/ahmetb/kubectx/cmd/kubens
+[ "$UID" -eq 0 ] || exec sudo bash "$0" "$@"
+
+VERSION=$(github-latest ahmetb/kubectx)
+
+KUBECTX_URL=https://github.com/ahmetb/kubectx/releases/download/v${VERSION}/kubectx_v${VERSION}_linux_x86_64.tar.gz
+KUBENS_URL=https://github.com/ahmetb/kubectx/releases/download/v${VERSION}/kubens_v${VERSION}_linux_x86_64.tar.gz
+
+cd /tmp
+curl -L ${KUBECTX_URL} | tar -zx
+curl -L ${KUBENS_URL} | tar -zx
+chown root:root kube{ctx,ns}
+mv kube{ctx,ns} /usr/local/bin
