@@ -4,4 +4,4 @@ go get -u golang.org/x/lint/golint
 go get -u github.com/daixiang0/gci
 
 VERSION=$(github-latest golangci/golangci-lint)
-go get github.com/golangci/golangci-lint/cmd/golangci-lint@v$VERSION
+curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(go env GOPATH)/bin v$VERSION
