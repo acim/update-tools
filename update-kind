@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
 
-VERSION=$(github-latest kubernetes-sigs/kind)
-GO111MODULE="on" go get sigs.k8s.io/kind@v${VERSION}
+go install sigs.k8s.io/kind@latest
