@@ -1,7 +1,6 @@
 # update-tools
 
 [![GitHub](https://img.shields.io/github/license/acim/update-tools)](LICENSE)
-[![HitCount](http://hits.dwyl.com/acim/update-tools.svg)](http://hits.dwyl.com/acim/update-tools)
 
 Bored by updating go, helm, helmfile, terraform, etc.? You are at the right place 😊.
 
