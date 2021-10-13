@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+[ "$UID" -eq 0 ] || exec sudo bash "$0" "$@"
+
+curl -L -o /usr/local/bin/hadolint https://github.com/hadolint/hadolint/releases/latest/download/hadolint-Linux-x86_64
+chmod 755 /usr/local/bin/hadolint
