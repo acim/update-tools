@@ -6,5 +6,5 @@ VERSION=$(github-latest acim/github-latest)
 FILENAME=github-latest-v${VERSION}-linux-amd64.tar.gz
 URL=https://github.com/acim/github-latest/releases/download/v${VERSION}/${FILENAME}
 
-curl -L  ${URL} | tar -zxC /usr/local/bin
+curl -L ${URL} | tar -zxC /usr/local/bin
 chown root:root /usr/local/bin/github-latest
