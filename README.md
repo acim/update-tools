@@ -1,6 +1,6 @@
 # update-tools
 
-[![GitHub](https://img.shields.io/github/license/acim/update-tools)](LICENSE)
+[![License](https://img.shields.io/badge/license-BSD--2--Clause--Patent-orange.svg)](https://github.com/acim/update-tools/blob/main/LICENSE)
 
 Bored by updating go, helm, helmfile, terraform, etc.? You are at the right place 😊.
 
