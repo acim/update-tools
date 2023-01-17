@@ -2,5 +2,7 @@
 
 [ "$UID" -eq 0 ] || exec sudo bash "$0" "$@"
 
-curl -L -o /usr/local/bin/helmfile https://github.com/roboll/helmfile/releases/latest/download/helmfile_linux_amd64
-chmod 755 /usr/local/bin/helmfile
+VERSION=$(github-latest helmfile/helmfile)
+cd /tmp
+curl -L https://github.com/helmfile/helmfile/releases/download/v${VERSION}/helmfile_${VERSION}_linux_amd64.tar.gz | tar zx
+install -t /usr/local/bin helmfile
