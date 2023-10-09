@@ -1,6 +1,3 @@
 #!/usr/bin/env bash
 
-[ "$UID" -eq 0 ] || exec sudo bash "$0" "$@"
-
-curl -L -o /usr/local/bin/stern https://github.com/wercker/stern/releases/latest/download/stern_linux_amd64
-chmod 755 /usr/local/bin/stern
+go install github.com/stern/stern@latest
