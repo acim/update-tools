@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+[ "$UID" -eq 0 ] || exec sudo bash "$0" "$@"
+
+latest=$(github-latest nextcloud-releases/desktop)
+
+sudo curl -L "https://github.com/nextcloud-releases/desktop/releases/latest/download/Nextcloud-${latest}-$(uname -m).AppImage" -o /usr/local/bin/nextcloud
+sudo chmod +x /usr/local/bin/nextcloud
